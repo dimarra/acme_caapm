@@ -35,7 +35,22 @@
 #
 # Copyright 2015 Your name here, unless otherwise noted.
 #
-class acme_caapm {
+class acme_caapm (
+    $pg_ssl                  = false,
+    $postgres_dir            = undef,
+    $ssl_dir                 = undef,
+    $ssl_ciphers             = 'ALL:!ADH:!LOW:!EXP:!MD5:@STRENGTH',
+    $ssl_filename            = undef,
+    $ssl_cert_file           = 'server.crt',
+    $ssl_key_file            = 'server.key',
+    $ssl_ca_file             = '',
+    $ssl_crl_file            = '',
+
+    $owner                   = undef,
+    $group                   = undef,
+    $mode                    = undef,
+  
+) {
 
 
 }

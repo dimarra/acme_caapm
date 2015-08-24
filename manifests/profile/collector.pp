@@ -5,6 +5,5 @@
 #
 class acme_caapm::profile::collector  { 
 
-
  
 }
