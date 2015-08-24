@@ -1,0 +1,14 @@
+{
+  "name": "dimarra-acme_caapm",
+  "version": "0.1.0",
+  "author": "dimarra",
+  "summary": "Extending CA APM module for your organization's specific implementation",
+  "license": "Apache 2.0",
+  "source": "somegit",
+  "project_page": "learnhere",
+  "issues_url": "issueshere",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
