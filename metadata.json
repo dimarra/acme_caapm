@@ -4,7 +4,7 @@
   "author": "dimarra",
   "summary": "Extending CA APM module for your organization's specific implementation",
   "license": "Apache 2.0",
-  "source": "https://github.com/dimarra/acme_caapm",
+  "source": "https://github.com/dimarra/acme_caapm.git",
   "project_page": "https://github.com/dimarra/acme_caapm",
   "issues_url": "https://github.com/dimarra/acme_caapm/issues",
   "dependencies": [

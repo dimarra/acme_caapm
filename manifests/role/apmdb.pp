@@ -5,7 +5,8 @@
 #
 class acme_caapm::role::apmdb { 
   
-  include acme_caapm::profile::database
+  contain      caapm::profile::database
+  contain acme_caapm::profile::database
 
 # which splunk module do you want to use  
 # include acme_splunk::profile::uforwarder

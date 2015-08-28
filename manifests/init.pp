@@ -38,6 +38,7 @@
 class acme_caapm (
     $pg_ssl                  = false,
     $postgres_dir            = undef,
+    $db_host                 = 'localhost',
     $ssl_dir                 = undef,
     $ssl_ciphers             = 'ALL:!ADH:!LOW:!EXP:!MD5:@STRENGTH',
     $ssl_filename            = undef,
@@ -45,12 +46,22 @@ class acme_caapm (
     $ssl_key_file            = 'server.key',
     $ssl_ca_file             = '',
     $ssl_crl_file            = '',
-
+    
+    $keystore_file           = 'internal/server/keystore',
+    $keystore_passwd         = 'password',
+    $keytool                 = 'jre/bin/keytool',
+    $user_install_dir        = '/var/caapm/test/',
     $owner                   = undef,
     $group                   = undef,
     $mode                    = undef,
   
 ) {
 
+    file { $ssl_dir:
+      ensure  => 'directory',
+      owner   => $owner,
+      group   => $group,
+      mode    => $mode,
+    }
 
 }
